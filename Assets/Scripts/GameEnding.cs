@@ -15,6 +15,10 @@ public class GameEnding : MonoBehaviour
     bool m_IsPlayerCaught;
     float m_Timer;
 
+    public AudioSource exitAudio;
+    public AudioSource caughtAudio;
+    bool m_HasAudioPlayed;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
